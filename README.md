@@ -1,5 +1,5 @@
 # Cryptography
-This package contains various implementation of cryptography algorithms and solutions.
+This contains various implementation of cryptography algorithms and solutions.
 
 
 Wieners-Attack:
