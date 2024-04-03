@@ -21,7 +21,6 @@ Function order: Returns a number k such that b^k = 1 (mod p)
 Function convertx2e:
 Function STonelli: This function acts like th 'main' would in Java,C++ etc. It makes sure that all the nesessary conditions are met in ordetr for the rest of the functions to be called.
 
-
 # DivisorCheck->possibility.py
 This program finds the possibility of a number with bit length n, having a integer divisor d with bit length betweet [n/2-1,n2+1]
 
