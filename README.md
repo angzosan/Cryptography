@@ -2,10 +2,10 @@
 This contains various implementation of cryptography algorithms and solutions.
 
 
-Wieners-Attack:
+# Wieners-Attack:
 Simple demonstration of the Wiener's Attack, and against against the RSA encryption
 
-Vigenere:
+# Vigenere:
 Implementation of the Vigenere Algorithm without key. Needs modification in order to be used for different texts.
 Functions:
 find_letter(arg): Corresponds the number given as an argument to a letter.
@@ -13,7 +13,7 @@ find_number(arg): Opposite of find_letter, corresponds the letter given as an ar
 def given_frequency(arg): Returns the frequency of a number. This is a standard number.
 #1 Finding the key length We count the coincidences and the number after which notive reoccurance or a pattern, is the key length. In this scenario, that number is 7. Although the number can be found, for now the number is passed hardcoded. For othertexts, this value needs to change.
 
-Tonelli-Shanks
+# Tonelli-Shanks
 Script that finds the modular square root of two numbers. The script follows the Tonelli-Shanks algorithm which is widely used in cryptography.
 Function pow1:
 Function gcd: Recursice function that finds the gcd between two numbers.
@@ -22,7 +22,7 @@ Function convertx2e:
 Function STonelli: This function acts like th 'main' would in Java,C++ etc. It makes sure that all the nesessary conditions are met in ordetr for the rest of the functions to be called.
 
 
-DivisorCheck->possibility.py
+# DivisorCheck->possibility.py
 This program finds the possibility of a number with bit length n, having a integer divisor d with bit length betweet [n/2-1,n2+1]
 
 The implementation is quite is and the main goal of this script is the familiarity with finding the divisors of a number.
