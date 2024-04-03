@@ -1,7 +1,6 @@
 # Cryptography
 This contains various implementation of cryptography algorithms and solutions.
 
-
 # Wieners-Attack:
 Simple demonstration of the Wiener's Attack, and against against the RSA encryption
 
@@ -20,6 +19,13 @@ Function gcd: Recursice function that finds the gcd between two numbers.
 Function order: Returns a number k such that b^k = 1 (mod p)
 Function convertx2e:
 Function STonelli: This function acts like th 'main' would in Java,C++ etc. It makes sure that all the nesessary conditions are met in ordetr for the rest of the functions to be called.
+
+# Password Strength
+Script in python that checks the strength of a given password
+checkWordList : make sure that the pws does not contain a word that belongs in a predefined list ( most word in the list are common words )
+checkNumb : make sure that the pwd contains at least one number
+checkSpelChars : make sure the pwd contains at least one special character
+testLength : make sure the length is over 8 chars
 
 # DivisorCheck->possibility.py
 This program finds the possibility of a number with bit length n, having a integer divisor d with bit length betweet [n/2-1,n2+1]
