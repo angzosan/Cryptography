@@ -1,0 +1,23 @@
+Pwd :  current directory 
+
+Ls : files in the current directory  
+
+Cd : navigate to another directory  
+
+Man 'command' : a 'txt' looking screen of how to use the desired command - can be used on any commands 
+
+'command' --help : same as the man but with extra information 
+
+Apt -get : the application where we can download 
+
+Apt -get update : updating the page with the applications -NEEDS to be done before installing 
+
+Apt -get install 'program name'  : install programs 
+
+Ifconfig : all the connections 
+
+Iwconfig : mopde managed -> will capture packets only for our  
+
+ 
+
+Tab autocompletes and the arrows navigate in the precious commands of the terminal 
